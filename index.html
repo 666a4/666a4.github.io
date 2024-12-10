@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Parkit</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="parketp.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="title">
+            <h1>P A R K I T</h1>
+        </div>
+
+        <div class="separate"></div>
+
+        <div class="navigation">
+            <img src="parkit.png" alt="parket" class="navigation-imige">
+            
+            <div class="list">
+                <a href="#rates-start">Rates</a>
+                <a href="#time-container">Times</a>
+                <a href="#location">Location</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div id="booking">
+            <h2>Book your parking space:</h2>
+            <form action="#">
+                <label for="name-booking">Name:</label>
+                <input type="text" id="name-booking" name="name" required><br>
+
+                <label for="email-booking">Email:</label>
+                <input type="email" id="email-booking" name="email" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br>
+
+                <label for="parking-space">Parking space:</label>
+                <select id="parking-space" name="parking-space" required>
+                    <option value="">Select a parking space</option>
+                    <option value="oversized">Oversized</option>
+                    <option value="car">Car</option>
+                    <option value="motorbike">Motorbike</option>
+                    <option value="bike">Bike</option>
+                </select>
+                
+                <input type="submit" value="Book">
+
+                <div id="message-booking"></div>
+            </form>
+        </div>
+
+        <div id="rates">
+            <br id="rates-start">
+            <h2 id="rates-header">Rates:</h2>
+            <div class="grid">
+                <div class="grid-item"><i class="fa-solid fa-van-shuttle"></i> Over sized - £7/day</div>
+                <div class="grid-item"><i class="fa-solid fa-car"></i> Car - £5/day</div>
+                <div class="grid-item"><i class="fa-solid fa-motorcycle"></i> Motorbike - £2/day</div>
+                <div class="grid-item"><i class="fa-solid fa-bicycle"></i> Bike - £1/day</div>
+            </div>
+        </div>
+
+        <div id="time-container">
+            <h2>Open time:</h2>
+            <div class="grid">
+                <div class="grid-item blue"><pre>Monday    - 7:00/15:00</pre></div>
+                <div class="grid-item blue"><pre>Tuesday   - 7:00/17:00</pre></div>
+                <div class="grid-item blue"><pre>Wednesday - 9:00/17:00</pre></div>
+                <div class="grid-item blue"><pre>Thursday  - 7:00/17:00</pre></div>
+                <div class="grid-item blue"><pre>Friday    - 7:00/17:00</pre></div>
+                <div class="grid-item blue"><pre>No weekends</pre></div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h2>Contact:</h2>
+            <p>
+                <strong>Phone:</strong> +44 123 456 7890<br>
+                <strong>Email:</strong> info@parket.co.uk<br>
+                <strong>Address:</strong> <a href="googlemaps" class="map-link">123 Main Street PE6 2DE</a><br>
+            </p>
+
+            <form>
+                <label for="name-contact">Name:</label>
+                <input type="text" id="name-contact" name="name"><br><br>
+        
+                <label for="email-contact">Email:</label>
+                <input type="email" id="email-contact" name="Email"><br><br>
+
+                <label for="message-contact">Message:</label>
+                <input type="text" id="message-contact" name="message"><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="location">
+
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
