@@ -1,16 +1,16 @@
 @font-face {
     font-family: "fount-medium";
-    src: url("./Kanit/Kanit-Medium.ttf");
+    src: url("./founts/Kanit-Medium.ttf");
 }
 
 @font-face {
     font-family: "fount-light";
-    src: url("./Kanit/Kanit-Light.ttf");
+    src: url("./founts/Kanit-Light.ttf");
 }
 
 @font-face {
     font-family: "title";
-    src: url("./Red_Rose/RedRose-VariableFont_wght.ttf");
+    src: url("./founts/RedRose-VariableFont_wght.ttf");
 }
 
 html {
